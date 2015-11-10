@@ -1,4 +1,7 @@
 ﻿<%@ Page Title="Home" Language="C#" MasterPageFile="~/IndiasFlavor.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="AspNetStatic.Home" %>
+
+<%@ Register Src="~/UpdatePost.ascx" TagPrefix="uc1" TagName="UpdatePost" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -53,7 +56,6 @@
                 </div>
             </div>
         </div>
-
         <div class="row">
             <div class="box">
                 <div class="col-lg-12">
@@ -80,6 +82,8 @@
                 </div>
             </div>
         </div>
-
+      <br />
+        <asp:PlaceHolder runat="server" ID="UpdatesPlaceHolder" />
+        
     </div>
 </asp:Content>
